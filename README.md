@@ -113,7 +113,7 @@ Type Aliases
                 
        
 
-different :
+### different :
 
  interface:
 
@@ -138,6 +138,41 @@ different :
                 // Error: Duplicate identifier 'Window'.
 
         
+	
+
+### different another example :
+
+type 
+
+    type x = {
+     a: string ;
+     b: string ;
+     
+     }
+     
+     type y = x & {
+      c : string ;
+      d : string ;
+      
+      }
+      
+ interfacce 
+ 
+    interface x {
+    
+        a : string ;
+	b : string ;
+	}
+	
+
+	
+     interface y extends x {
+      c : string ;
+      d : string ;
+      }
+   
+    
+
  
 ### 7th example : generic Type 
 
