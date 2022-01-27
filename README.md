@@ -1,4 +1,15 @@
 # TypeScript-doc
+#### #event (form) type  =>  React.FormEvent<EventTarget>
+	
+	
+	Example 
+	
+	
+	  function SubmitValue(event:React.FormEvent<EventTarget>){
+             event.preventDefault()
+             console.log("hello");
+      
+           }
 
 ### 1st example :  Object Types
 
