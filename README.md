@@ -1,4 +1,23 @@
-# TypeScript-doc
+# TypeScript-doc basic to advance
+
+https://www.typescripttutorial.net/typescript-tutorial/typescript-type-aliases/
+https://devsonket.com/typescript
+
+##### basic
+
+           function nameFunc(name: string,value : number){
+
+		    console.log(name,value)
+
+            }
+
+
+	     nameFunc("string",3)
+
+
+
+
+
 #### #event (form) type  =>  React.FormEvent<EventTarget>
 	
 	
