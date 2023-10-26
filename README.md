@@ -1,4 +1,4 @@
-## Basic Prop Types Examples
+## 🙉 Basic Prop Types Examples 🧮
     
     
     type AppProps = {
@@ -82,7 +82,7 @@
 
 
 
-Useful React Prop Type Examples:
+🗂️ Useful React Prop Type Examples 🥊 :
 
 
 
@@ -102,12 +102,16 @@ Useful React Prop Type Examples:
 
     
     }
-hook:
+    
+    
+    
+    
+🥇 hook:
 .........
 
     const [user, setUser] = useState<User | null>(null);
 
-hook add :
+🥇 hook add :
 
     type ThemeContextType = "light" | "dark";
     
@@ -115,7 +119,7 @@ hook add :
 
      const [theme, setTheme] = useState<ThemeContextType>("light");
 
-onsubmit:
+🥇 onsubmit:
 
      onSubmit={(e: React.SyntheticEvent) => {
      
@@ -131,3 +135,9 @@ onsubmit:
         const password = target.password.value; // typechecks!
        
       }}
+
+🥇 type:
+
+       type Status = "idle" | "loading" | "success" | "error";
+
+        const [name, setname] = useState<Status>("idle")
