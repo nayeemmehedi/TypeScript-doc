@@ -47,6 +47,35 @@ example:
       gender: GenderEnum.female
     }
 
+ 5. Type Aliases
+
+
+        type CarYear = number
+        type CarType = string
+        type CarModel = string
+        type Car = {
+          year: CarYear,
+          type: CarType,
+          model: CarModel
+        }
+6.Interfaces 
+
+    interface Rectangle {
+      height: number,
+      width: number
+    }
+    
+    const rectangle: Rectangle = {
+      height: 20,
+      width: 10
+    };
+
+ 7.Generic : 
+
+  function createPair<S, T>(v1: S, v2: T): [S, T] {
+  return [v1, v2];
+}
+console.log(createPair<string, number>('hello', 42));
 
 
 
