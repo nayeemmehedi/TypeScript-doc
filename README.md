@@ -101,4 +101,33 @@ Useful React Prop Type Examples:
     props2: Props & React.ComponentPropsWithRef<MyButtonWithForwardRef>; // to impersonate all the props of MyButtonForwardedRef and explicitly forwarding its ref
 
     
-  }
+    }
+hook:
+.........
+
+    const [user, setUser] = useState<User | null>(null);
+
+hook add :
+
+    type ThemeContextType = "light" | "dark";
+    
+    const ThemeContext = createContext<ThemeContextType>("light");
+
+     const [theme, setTheme] = useState<ThemeContextType>("light");
+
+onsubmit:
+
+     onSubmit={(e: React.SyntheticEvent) => {
+     
+        e.preventDefault();
+        
+        const target = e.target as typeof e.target & {
+          email: { value: string };
+          password: { value: string };
+        };
+
+        
+        const email = target.email.value; // typechecks!
+        const password = target.password.value; // typechecks!
+       
+      }}
